@@ -1,0 +1,102 @@
+{
+  "name": "@riva/sdk",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for Vaults from Riva Labs - A secure, production-ready tokenized vault protocol on Sui",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./client": {
+      "types": "./dist/client/index.d.ts",
+      "import": "./dist/client/index.mjs",
+      "require": "./dist/client/index.js"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.mjs",
+      "require": "./dist/types/index.js"
+    },
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "import": "./dist/utils/index.mjs",
+      "require": "./dist/utils/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "dev": "tsup --watch",
+    "test": "vitest --passWithNoTests",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "test:integration": "vitest tests/integration.test.ts",
+    "test:integration:simple": "vitest tests/integration-simple.test.ts",
+    "test:integration:sui": "vitest tests/integration-with-sui.test.ts",
+    "test:coin-deployment": "vitest tests/coin-deployment.test.ts",
+    "test:real-tx": "vitest tests/real-tx.test.ts",
+    "test:unit": "vitest tests/vault.test.ts",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "type-check": "tsc --noEmit",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "prepublishOnly": "npm run type-check && npm run build"
+  },
+  "keywords": [
+    "sui",
+    "blockchain",
+    "defi",
+    "vault",
+    "typescript",
+    "sdk",
+    "web3"
+  ],
+  "author": "Riva Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/riva-labs/vault_sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/riva-labs/vault_sdk/issues"
+  },
+  "homepage": "https://rivalabs.io",
+  "documentation": "https://github.com/riva-labs/vault_sdk/tree/main/docs",
+  "peerDependencies": {
+    "@mysten/sui": "^1.28.2"
+  },
+  "devDependencies": {
+    "@mysten/sui": "^1.28.2",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "eslint": "^8.54.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2",
+    "vitepress": "^1.0.0",
+    "vitest": "^1.0.0"
+  },
+  "dependencies": {
+    "@mysten/bcs": "^1.6.0",
+    "bignumber.js": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
