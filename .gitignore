@@ -98,3 +98,61 @@ temp/
 
 # Local development
 .local
+
+# VitePress related (documentation)
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+.vitepress/cache/
+.vitepress/dist/
+
+# Vitest related
+.vitest/
+**/vitest.config.*.timestamp-*
+
+# TypeScript build info
+**/tsconfig.tsbuildinfo
+**/*.tsbuildinfo
+
+# Test related files and directories
+tests/coverage/
+tests/tmp/
+tests/temp/
+test-results/
+playwright-report/
+
+# Turbo (if using turborepo)
+.turbo/
+
+# Biome/Rome (alternative linters)
+.rome/
+biome-logs/
+
+# Sui specific (blockchain related files)
+.sui/
+sui.log
+*.keystore
+
+# Additional environment files
+.env.*.local
+.env.staging
+.env.production
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Runtime files
+*.pid
+*.seed
+
+# macOS specific (additional)
+*.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows specific (additional)
+desktop.ini
+$RECYCLE.BIN/
+
