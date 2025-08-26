@@ -1,5 +1,5 @@
 {
-  "name": "@riva/sdk",
+  "name": "@riva-labs/sdk",
   "version": "1.0.0",
   "description": "TypeScript SDK for Vaults from Riva Labs - A secure, production-ready tokenized vault protocol on Sui",
   "main": "dist/index.js",

@@ -1,17 +1,17 @@
-# Riva SDK (@riva/sdk)
+# Riva SDK (@riva-labs/sdk)
 
 TypeScript SDK by Riva Labs for interacting with Tokenized Vaults on Sui. The SDK is build-only: all operations append to a provided `Transaction`. Execution and key management are handled by your backend or frontend.
 
 ## Installation
 
 ```bash
-npm install @riva/sdk @mysten/sui
+npm install @riva-labs/sdk @mysten/sui
 ```
 
 ## Quick Start
 
 ```typescript
-import { RivaClient, MAINNET_CONFIG, COIN_TYPES } from '@riva/sdk';
+import { RivaClient, MAINNET_CONFIG, COIN_TYPES } from '@riva-labs/sdk';
 import { SuiClient } from '@mysten/sui/client';
 import { Transaction } from '@mysten/sui/transactions';
 
@@ -139,7 +139,7 @@ const coins = await client.getCoins(owner, COIN_TYPES.USDC);
 The SDK throws structured errors using `VaultError` and `VaultErrorCode`.
 
 ```typescript
-import { VaultError, VaultErrorCode } from '@riva/sdk';
+import { VaultError, VaultErrorCode } from '@riva-labs/sdk';
 
 try {
   // ...

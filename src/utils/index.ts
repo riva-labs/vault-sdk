@@ -1,5 +1,5 @@
 /**
- * @riva/sdk - Utils Module
+ * @riva-labs/sdk - Utils Module
  * 
  * Comprehensive utility functions for the Riva SDK
  * Production-ready utilities for $100B+ volume operations

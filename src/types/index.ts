@@ -1,5 +1,5 @@
 /**
- * @riva/sdk - Types Module
+ * @riva-labs/sdk - Types Module
  * 
  * Comprehensive TypeScript type definitions for the Riva SDK
  * Production-ready interfaces for $100B+ volume operations

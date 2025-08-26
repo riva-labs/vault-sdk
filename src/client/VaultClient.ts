@@ -69,7 +69,7 @@ import {
  *
  * @example
  * ```typescript
- * import { RivaClient, MAINNET_CONFIG } from '@riva/sdk';
+ * import { RivaClient, MAINNET_CONFIG } from '@riva-labs/sdk';
  *
  * const client = await RivaClient.initialize({
  *   network: MAINNET_CONFIG,

@@ -1,11 +1,11 @@
 /**
- * @riva/sdk - Main Entry Point
+ * @riva-labs/sdk - Main Entry Point
  * 
  * TypeScript SDK for Tokenized Vaults on Sui (Riva Labs)
  * 
  * @example
  * ```typescript
- * import { RivaClient, MAINNET_CONFIG, COIN_TYPES } from '@riva/sdk';
+ * import { RivaClient, MAINNET_CONFIG, COIN_TYPES } from '@riva-labs/sdk';
  * 
  * // Initialize client
  * const client = await RivaClient.initialize({
@@ -114,7 +114,7 @@ export const SUPPORTED_NETWORKS = ['mainnet', 'testnet', 'devnet', 'localnet'] a
 /**
  * SDK name
  */
-export const SDK_NAME = '@riva/sdk';
+export const SDK_NAME = '@riva-labs/sdk';
 
 /**
  * Default configuration for quick setup

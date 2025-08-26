@@ -1,5 +1,5 @@
 /**
- * @riva/sdk - Constants Module
+ * @riva-labs/sdk - Constants Module
  * 
  * All constants, configurations, and static values for the Riva SDK
  * Production-ready constants for $100B+ volume operations

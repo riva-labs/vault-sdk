@@ -1,5 +1,5 @@
 /**
- * @riva/sdk - Client Module
+ * @riva-labs/sdk - Client Module
  * 
  * Main client interface for Tokenized Vaults operations
  * Production-ready client for $100B+ volume
