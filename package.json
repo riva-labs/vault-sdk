@@ -70,13 +70,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/riva-labs/vault_sdk"
+    "url": "https://github.com/riva-labs/vault-sdk"
   },
   "bugs": {
-    "url": "https://github.com/riva-labs/vault_sdk/issues"
+    "url": "https://github.com/riva-labs/vault-sdk/issues"
   },
   "homepage": "https://rivalabs.io",
-  "documentation": "https://github.com/riva-labs/vault_sdk/tree/main/docs",
+  "documentation": "https://github.com/riva-labs/vault-sdk/tree/main/docs",
   "peerDependencies": {
     "@mysten/sui": "^1.28.2"
   },
